@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["velopotential*"]
+
+[project]
+name = "velopotential"
+version = "0.1.0"
+description = ""
+requires-python = ">= 3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Private :: Do Not Upload"
+]
+
+dependencies = [
+  "ipykernel ~= 7.1.0",
+  "ipywidgets ~= 8.1.8",
+  "scvelo == 0.3.3",
+  "torch ~= 2.8.0",
+  "torchvision ~= 0.23.0"
+]
+
+docs = [
+  "sphinx == 7.3.7",
+  "myst_nb == 1.3.0",
+  "sphinx_rtd_theme == 3.0.2",
+  "sphinx-design>=0.6.0"
+]
