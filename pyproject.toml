@@ -1,3 +1,11 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+# 只打包 velopotential 这个顶层包，忽略 reproducibility
+packages = ["velopotential"]
+
 [project]
 name = "velopotential"
 version = "0.1.0"
