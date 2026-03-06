@@ -1,10 +1,3 @@
-[build-system]
-requires = ["setuptools>=61", "wheel"]
-build-backend = "setuptools.build_meta"
-
-[tool.setuptools.packages.find]
-include = ["velopotential*"]
-
 [project]
 name = "velopotential"
 version = "0.1.0"
@@ -24,6 +17,7 @@ dependencies = [
   "torchvision ~= 0.23.0"
 ]
 
+[project.optional-dependencies]
 docs = [
   "sphinx == 7.3.7",
   "myst_nb == 1.3.0",
