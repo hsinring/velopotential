@@ -5,4 +5,4 @@
 
 Velopotential tutorials are available at:
 
-- https://velopotential.readthedocs.io/en/latest/
+- https://velopotential.readthedocs.io/
